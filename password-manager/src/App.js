@@ -1,14 +1,12 @@
-import logo from './logo.svg';
-import react from 'react';
-import LoginPage from './LoginPage';
-import './App.css';
+import { BrowserRouter } from 'react-router-dom'
+import Navbar from './Navbar'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-        <LoginPage /> {/* Reder */}
-    </div>
-  );
+    <BrowserRouter>
+      <Navbar />
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
